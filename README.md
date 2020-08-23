@@ -2,7 +2,7 @@
 
 ![screenshot](https://github.com/gogorichie/Simple-Pi-Stats-Dashboard/blob/master/Dashboard.jpg)
 
-This is a quick and easy to understand dashboard monitoring the performance of your RaspberryPi devices.
+This is a quick and easy to understand dashboard for monitoring the performance of your RaspberryPi devices.
 
 ## Dependencies:
 * GRAFANA
