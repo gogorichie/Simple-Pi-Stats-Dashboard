@@ -5,13 +5,13 @@
 This is a quick and easy to understand dashboard for monitoring the performance of your RaspberryPi devices.
 
 ## Dependencies:
-* GRAFANA
-* GRAPH
-* INFLUXDB
+* [GRAFANA](https://grafana.com/) 
+* GRAPH 
+* [INFLUXDB](https://www.influxdata.com/products/influxdb-overview/)
 * SINGLESTAT
 
 ## Collector:
-* Telegraf
+* [Telegraf](https://www.influxdata.com/time-series-platform/telegraf/)
 
 ###############################################################################
 #                            INPUT PLUGINS                                    #
