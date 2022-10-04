@@ -34,5 +34,3 @@ This is a quick and easy to understand dashboard for monitoring the performance 
 <br /> [[inputs.interrupts]]
 <br />    cpu_as_tag = true
 <br /> [[inputs.linux_sysctl_fs]]
-<br /> [[inputs.net]]
-<br /> [[inputs.netstat]]
