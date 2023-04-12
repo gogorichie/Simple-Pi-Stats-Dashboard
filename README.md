@@ -20,6 +20,7 @@ This is a quick and easy to understand dashboard for monitoring the performance 
 <br /> [[inputs.net]]
 <br /> [[inputs.netstat]]
 <br /> [[inputs.disk]]
+<br /> [[inputs.cpu]]
 <br />   percpu = true
 <br />   totalcpu = true
 <br />   collect_cpu_time = false
