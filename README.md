@@ -13,25 +13,44 @@ This is a quick and easy to understand dashboard for monitoring the performance 
 ## Collector:
 * [Telegraf](https://www.influxdata.com/time-series-platform/telegraf/)
 
+[global_tags]
+[agent]
+  interval = "10s"
+  round_interval = true
+  metric_batch_size = 1000
+  metric_buffer_limit = 10000
+  collection_jitter = "0s"
+  flush_jitter = "0s"
+  precision = ""
+  hostname = ""
+  omit_hostname = false
+
+
 ###############################################################################
-#                            INPUT PLUGINS                                    #
+#                            OUTPUT PLUGINS                                   #
+###############################################################################
+[[outputs.influxdb]]
+ urls = ["http://local:8086"]
+
+###############################################################################
+#                            INPUT PLUGINS                                   #
 ###############################################################################
 
-<br /> [[inputs.net]]
-<br /> [[inputs.netstat]]
-<br /> [[inputs.disk]]
-<br /> [[inputs.cpu]]
-<br />   percpu = true
-<br />   totalcpu = true
-<br />   collect_cpu_time = false
-<br />   report_active = false
-<br /> [[inputs.diskio]]
-<br /> [[inputs.kernel]]
-<br /> [[inputs.mem]]
-<br /> [[inputs.processes]]
-<br /> [[inputs.swap]]
-<br /> [[inputs.system]]
-<br /> [[inputs.internal]]
-<br /> [[inputs.interrupts]]
-<br />    cpu_as_tag = true
-<br /> [[inputs.linux_sysctl_fs]]
+[[inputs.net]]
+[[inputs.netstat]]
+[[inputs.disk]]
+[[inputs.cpu]]
+  percpu = true
+  totalcpu = true
+  collect_cpu_time = false
+  report_active = false
+[[inputs.diskio]]
+[[inputs.kernel]]
+[[inputs.mem]]
+[[inputs.processes]]
+[[inputs.swap]]
+[[inputs.system]]
+[[inputs.internal]]
+[[inputs.interrupts]]
+  cpu_as_tag = true
+[[inputs.linux_sysctl_fs]]
